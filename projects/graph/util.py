@@ -22,6 +22,7 @@ class Stack():
         self.stack.append(value)
     def pop(self):
         if self.size() > 0:
+            #The pop() method removes the element at the specified position.In this case its the last item
             return self.stack.pop()
         else:
             return None
