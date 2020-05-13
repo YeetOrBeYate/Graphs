@@ -4,9 +4,11 @@ class Queue():
     def __init__(self):
         self.queue = []
     def enqueue(self, value):
+        #The append() method appends an element to the end of the list.
         self.queue.append(value)
     def dequeue(self):
         if self.size() > 0:
+            #The pop() method removes the element at the specified position.In this case its the first item
             return self.queue.pop(0)
         else:
             return None
@@ -20,6 +22,7 @@ class Stack():
         self.stack.append(value)
     def pop(self):
         if self.size() > 0:
+            #The pop() method removes the element at the specified position.In this case its the last item
             return self.stack.pop()
         else:
             return None
